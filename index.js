@@ -38,7 +38,7 @@ app.use('/api/doc', docRoutes);
 const socketDocMap = {};
 
 io.on('connection', socket => {
-  console.log(`🔌 New socket connected: ${socket.id}`);
+  console.log(` New socket connected: ${socket.id}`);
 
   socket.on('joinDoc', docId => {
     console.log(` Socket ${socket.id} joined document ${docId}`);
