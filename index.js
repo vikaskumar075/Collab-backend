@@ -21,7 +21,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://collab-frontend-4nja.vercel.app/',
+    origin: 'https://collab-frontend-4nja.vercel.app',
     methods: ['GET', 'POST'],
   },
 });
