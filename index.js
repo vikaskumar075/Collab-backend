@@ -23,6 +23,7 @@ const io = new Server(server, {
   cors: {
     origin: 'https://collab-frontend-4nja.vercel.app',
     methods: ['GET', 'POST'],
+        credentials: true
   },
 });
 
